@@ -4,6 +4,7 @@
   height: 200px;
   display: block;
   margin: 10px;
+  text-align: center;
 }
 
 #animate{
@@ -24,4 +25,3 @@ h3{
   border-bottom: 1px solid #000;
   text-align: center;
 }
-

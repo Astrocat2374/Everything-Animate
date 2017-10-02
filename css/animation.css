@@ -1,28 +1,90 @@
 @keyframes rotate{
-    0%{
+    from{
         transform:rotate(0deg);
-        background-color:blue;
     }
-    25%{
-        transform:rotate(90deg);
-        background-color:red;
-    }
-    50%{
-        transform:rotate(180deg);
-        background-color:green;
-    }
-    75%{
-        transform:rotate(270deg);
-        background-color:purple;
-    }
-    100%{
+    to{
         transform:rotate(360deg);
-        background-color:blue;
     }
 }
 
 #rotate{
     animation:rotate;
-    animation-duration:1s;
+    animation-duration:2s;
     animation-iteration-count: infinite;
+}
+
+@keyframes skew{
+    from{
+        transform:skew(0deg);
+    }
+    to{
+        transform:skew(360deg);
+    }
+}
+
+#skew{
+    animation:skew;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes all{
+    from{
+        transform:rotate(0deg);
+        color:white;
+        background-color:blue;
+    }
+    to{
+        transform:rotate(360deg);
+        color:blue;
+        background-color:white;
+    }
+}
+
+#all{
+    animation:all;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes matrix{
+    0%{
+        transform:translateX(0%);
+    }
+    50%{
+        transform:translateX(85%);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+#matrix{
+    animation:matrix;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+    from{
+        transform:rotate(0deg);
+        color:white;
+        background-color:blue;
+    }
+    to{
+        transform:rotate(360deg);
+        color:blue;
+        background-color:white;
+    }
+}
+
+#animate{
+    animation:animate;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+#pseudo:hover{
+    background-color:blue;
+    color:#00008B;
 }
